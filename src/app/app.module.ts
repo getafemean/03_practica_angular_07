@@ -10,7 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { ListadoClientesComponent } from './ventas/listado-clientes/listado-clientes.component';
 import { CrearClienteComponent } from './ventas/crear-cliente/crear-cliente.component';
 import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualizar-cliente.component';
-import { LoadFadeDirective } from './load-fade.directive';
+import { CompartidoModule } from './compartido/compartido.module';
 
 @NgModule({
   declarations: [
@@ -20,13 +20,13 @@ import { LoadFadeDirective } from './load-fade.directive';
     NavComponent,
     ListadoClientesComponent,
     CrearClienteComponent,
-    VisualizarClienteComponent,
-    LoadFadeDirective
+    VisualizarClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CompartidoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

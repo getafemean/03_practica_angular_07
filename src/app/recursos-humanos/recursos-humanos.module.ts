@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InicioRRHHComponent } from './inicio-rrhh/inicio-rrhh.component';
+
+import { CompartidoModule } from '../compartido/compartido.module';
 import { RecursosHumanosRoutingModule } from './recursos-humanos-routing.module';
+import { InicioRRHHComponent } from './inicio-rrhh/inicio-rrhh.component';
 
 @NgModule({
   declarations: [
@@ -9,7 +11,8 @@ import { RecursosHumanosRoutingModule } from './recursos-humanos-routing.module'
   ],
   imports: [
     CommonModule,
-    RecursosHumanosRoutingModule
+    RecursosHumanosRoutingModule,
+    CompartidoModule
   ]
 })
 
