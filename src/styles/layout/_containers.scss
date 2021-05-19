@@ -1,6 +1,12 @@
 .container {
     max-width: $pc-size;
     margin: 0 auto;
+    opacity: 0;
+    transition: 600ms opacity linear;
+
+    &.show {
+        opacity: 1;
+    }
 }
 
 .row {

@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { ListadoClientesComponent } from './ventas/listado-clientes/listado-clientes.component';
 import { CrearClienteComponent } from './ventas/crear-cliente/crear-cliente.component';
 import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualizar-cliente.component';
+import { LoadFadeDirective } from './load-fade.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualiz
     NavComponent,
     ListadoClientesComponent,
     CrearClienteComponent,
-    VisualizarClienteComponent
+    VisualizarClienteComponent,
+    LoadFadeDirective
   ],
   imports: [
     BrowserModule,
