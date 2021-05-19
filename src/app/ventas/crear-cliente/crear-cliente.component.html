@@ -1,1 +1,26 @@
-<p>crear-cliente works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-25"></div>
+        <div class="col-50">
+            <h1>Nuevo cliente</h1>
+            <form>
+                <div class="row">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" [(ngModel)]="cliente.nombre">
+                </div>
+                <div class="row">
+                    <label>CIF</label>
+                    <input type="text" name="cif" [(ngModel)]="cliente.cif">
+                </div>
+                <div class="row">
+                    <label>Localidad</label>
+                    <input type="text" name="localidad" [(ngModel)]="cliente.localidad">
+                </div>
+                <div class="row end">
+                    <button type="button" (click)="addCliente()">Añadir</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-25"></div>
+    </div>
+</div>
