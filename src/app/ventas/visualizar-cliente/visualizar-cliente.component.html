@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-25"></div>
+        <div class="col-50">
+            <h1>Detalle de cliente</h1>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td>{{cliente.nombre}}</td>
+                </tr>
+                <tr>
+                    <th>CIF</th>
+                    <td>{{cliente.cif}}</td>
+                </tr>
+                <tr>
+                    <th>Localidad</th>
+                    <td>{{cliente.localidad}}</td>
+                </tr>
+                <tr>
+                    <th>...</th>
+                    <td>...</td>
+                </tr>
+            </table>
+            <div class="row j-end a-center">
+                <button routerLink="/ventas/listado-clientes">Aceptar</button>
+            </div>
+        </div>
+        <div class="col-25"></div>
+    </div>
+</div>
