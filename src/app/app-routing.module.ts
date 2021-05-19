@@ -18,6 +18,10 @@ const routes: Routes = [
 
   ]},
   {path: 'compras', component: ComprasComponent},
+  {
+    path: 'recursos-humanos', 
+    loadChildren: () => import('./recursos-humanos/recursos-humanos.module').then(m => m.RecursosHumanosModule)
+  },
   {path: '**', redirectTo: ''}
 ];
 
