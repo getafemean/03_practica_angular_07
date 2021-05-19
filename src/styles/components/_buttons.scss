@@ -7,7 +7,17 @@ button {
     color: white;
     transition: all 400ms ease-in-out;
 
+    &.outline {
+        color: $primary-font-color;
+        background-color: white;
+    }
+
     &:hover {
+        background-color: $darker-primary-font-color;
+    }
+
+    &.outline:hover {
+        color: white;
         background-color: $darker-primary-font-color;
     }
 

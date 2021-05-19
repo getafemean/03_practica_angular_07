@@ -1,13 +1,17 @@
 <div class="container">
     <div class="row">
         <div class="col-100">
-            <h1>Listado de Clientes</h1>
+            <h1 class="flex j-between a-center">Listado de Clientes  <button class="outline" routerLink="../crear-cliente">Crear cliente</button></h1>
             <table>
                 <tr>
-                    <th></th>
                     <th>Nombre</th>
                     <th>CIF</th>
                     <th>Localidad</th>
+                </tr>
+                <tr *ngFor="let cliente of clientes">
+                    <td>{{cliente.nombre}}</td>
+                    <td>{{cliente.cif}}</td>
+                    <td>{{cliente.localidad}}</td>
                 </tr>
             </table>
         </div>
