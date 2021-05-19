@@ -11,6 +11,7 @@ import { ListadoClientesComponent } from './ventas/listado-clientes/listado-clie
 import { CrearClienteComponent } from './ventas/crear-cliente/crear-cliente.component';
 import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualizar-cliente.component';
 import { CompartidoModule } from './compartido/compartido.module';
+import { SinpermisosComponent } from './sinpermisos/sinpermisos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CompartidoModule } from './compartido/compartido.module';
     NavComponent,
     ListadoClientesComponent,
     CrearClienteComponent,
-    VisualizarClienteComponent
+    VisualizarClienteComponent,
+    SinpermisosComponent
   ],
   imports: [
     BrowserModule,

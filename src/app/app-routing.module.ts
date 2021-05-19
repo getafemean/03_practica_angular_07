@@ -6,6 +6,8 @@ import { ComprasComponent } from './compras/compras.component';
 import { ListadoClientesComponent } from './ventas/listado-clientes/listado-clientes.component';
 import { CrearClienteComponent } from './ventas/crear-cliente/crear-cliente.component';
 import { VisualizarClienteComponent } from './ventas/visualizar-cliente/visualizar-cliente.component';
+import { RrhhGuard } from './guards/rrhh.guard';
+import { SinpermisosComponent } from './sinpermisos/sinpermisos.component';
 
 const routes: Routes = [
   {path: '', component: InicioComponent},
@@ -20,8 +22,10 @@ const routes: Routes = [
   {path: 'compras', component: ComprasComponent},
   {
     path: 'recursos-humanos', 
-    loadChildren: () => import('./recursos-humanos/recursos-humanos.module').then(m => m.RecursosHumanosModule)
+    loadChildren: () => import('./recursos-humanos/recursos-humanos.module').then(m => m.RecursosHumanosModule),
+    canActivate: [RrhhGuard]
   },
+  {path: 'sin-permisos', component: SinpermisosComponent},
   {path: '**', redirectTo: ''}
 ];
 
